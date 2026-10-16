@@ -1,0 +1,28 @@
+name: tests
+
+# run the examples on every pull request towards main, and on main itself
+# (i.e., whenever a pull request is merged)
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  examples:
+    name: Run the RAPTOR examples
+    runs-on: windows-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v5
+
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v3
+        with:
+          release: R2023b
+
+      - name: Run the examples
+        uses: matlab-actions/run-command@v3
+        with:
+          command: addpath("tests"); runTests();

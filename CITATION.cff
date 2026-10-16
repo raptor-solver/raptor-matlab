@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use RAPTOR in published work, please cite the paper below."
+title: "RAPTOR: Rapid Algorithm for Pseudospectral Trajectory Optimization and Robustification"
+authors:
+  - family-names: Minnozzi
+    given-names: Riccardo
+repository-code: "https://github.com/raptor-solver/raptor-matlab"
+url: "https://raptor-solver.github.io/"
+license: MIT
+
+# Reference paper, shown by GitHub under "Cite this repository".
+preferred-citation:
+  type: article
+  title: "Theoretical and Computational Advances in Birkhoff Pseudospectral Transcription for Aerospace Optimal Control"
+  authors:
+    - family-names: Minnozzi
+      given-names: Riccardo
+    - family-names: Sagliano
+      given-names: Marco
+  year: 2026
+  journal: "arXiv preprint arXiv:2610.17842"
+  doi: "10.48550/arXiv.2610.17842"
+  url: "https://arxiv.org/abs/2610.17842"
