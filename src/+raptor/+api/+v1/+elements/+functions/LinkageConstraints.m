@@ -99,6 +99,7 @@ classdef LinkageConstraints < dynamicprops
                 [inputData.initialStates(1 : phase2.nStates); inputData.initialTime] - ...
                 [coordinateChange(inputData); inputData.finalTime]);
             link.functionType = functionType;
+	    link.jacobian.pattern.initialControls = [];
         end
     end
 end
